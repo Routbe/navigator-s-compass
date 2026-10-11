@@ -1,4 +1,8 @@
 # Roadmap
+- [ ] Unified transactional email design and complete site-event catalogue
+- [ ] Applicant receipts, admin review links and decision follow-ups
+- [ ] Creator eligibility (10,000 followers), pink creator and distinct business marks
+- [ ] Verify email renders, approval security and badge tests; identify service blockers
 - [ ] Ambient Weer: settings, private Pro webhook, cached weather and live atmospheric overlay
 - [x] Neon database updates (all applied)
 - [x] Neon connection card linked
