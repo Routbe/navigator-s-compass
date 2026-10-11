@@ -87,7 +87,7 @@ export const TEMPLATE_CATALOG: CatalogEntry[] = [
     category: "payment_confirmation",
     label: "Billing — payment confirmation (received / processing)",
     senders: ["src/lib/notifications.server.ts → notifyUser('payment_processing')"],
-    params: ["TITLE", "BODY", "CTA", "LINK", "AMOUNT", "CURRENCY", "REFERENCE", "TIER", "DATE"],
+    params: ["TITLE", "BODY", "CTA", "LINK", "NAME", "AMOUNT", "CURRENCY", "REFERENCE", "INVOICE_ID", "TIER", "DATE"],
   },
   {
     category: "welcome",
@@ -105,19 +105,19 @@ export const TEMPLATE_CATALOG: CatalogEntry[] = [
     category: "renewal",
     label: "Billing — subscription renewal",
     senders: ["src/lib/notifications.server.ts → notifyUser('subscription_renewed')"],
-    params: ["TITLE", "BODY", "CTA", "LINK", "AMOUNT", "CURRENCY", "TIER", "DATE"],
+    params: ["TITLE", "BODY", "CTA", "LINK", "NAME", "AMOUNT", "CURRENCY", "TIER", "PLAN", "DATE"],
   },
   {
     category: "cancellation",
     label: "Billing — subscription cancellation",
     senders: ["src/lib/notifications.server.ts → notifyUser('subscription_cancelled')"],
-    params: ["TITLE", "BODY", "CTA", "LINK", "TIER", "ENDS_AT", "DATE"],
+    params: ["TITLE", "BODY", "CTA", "LINK", "NAME", "TIER", "PLAN", "ENDS_AT", "END_DATE", "DATE"],
   },
   {
     category: "refund",
     label: "Billing — refund & credit note",
     senders: ["src/lib/notifications.server.ts → notifyUser('payment_refunded')"],
-    params: ["TITLE", "BODY", "CTA", "LINK", "AMOUNT", "CURRENCY", "REFERENCE", "DATE"],
+    params: ["TITLE", "BODY", "CTA", "LINK", "NAME", "AMOUNT", "CURRENCY", "REFERENCE", "CREDIT_ID", "REASON", "DATE"],
   },
   {
     category: "payment",
